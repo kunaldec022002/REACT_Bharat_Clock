@@ -1,11 +1,13 @@
-let ClockTime = () => {
+let CurrentTime = () => {
+
+  let time = new Date();
 
   return(
     <div>
-      <h1>This is the current time:</h1>
+      <p className="lead">This is the current time:{time.toLocaleDateString()}-{time.toLocaleTimeString()}</p>
       </div>
   )
 
 };
 
-export default ClockTime;
+export default CurrentTime;
